@@ -29,8 +29,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginTop="3dp"
+                android:layout_marginTop="8dp"
                 android:fontFamily="sans-serif-medium"
+
                 android:text="  Cricket T20 World Championship Final."
                 android:textStyle="bold" />
         </LinearLayout>
@@ -360,6 +361,7 @@
                 android:layout_height="wrap_content"
                 android:text=""
                 android:textSize="16sp"
+                android:textAlignment="center"
                 android:fontFamily="sans-serif-medium"
                 android:id="@+id/resultA"
                 />
@@ -369,14 +371,16 @@
                 android:layout_height="wrap_content"
                 android:text=""
                 android:textSize="16sp"
+                android:textAlignment="center"
                 android:fontFamily="sans-serif-medium"
                 android:id="@+id/resultB"
                 />
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text=""
+                android:textAlignment="center"
                 android:textSize="16sp"
                 android:fontFamily="sans-serif-medium"
                 android:id="@+id/finalResult"

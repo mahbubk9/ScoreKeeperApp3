@@ -98,9 +98,15 @@ public class MainActivity extends AppCompatActivity {
         wktDiff=10-wktTeamB;
         teamBWin= "TeamB Won The Game for "+wktDiff+ " Wickets!";
 
+        if(ballTeamA>0){
+            displayResult(commentryA);
 
-        displayResult(commentryA);
-        displayResultB(commentryB);
+        }
+        if(ballTeamB>0){
+            displayResult(commentryB);
+
+        }
+        //displayResultB(commentryB);
         if (resultChoice==1){
             displayFinalResult(teamAWin);
 
@@ -304,7 +310,7 @@ public class MainActivity extends AppCompatActivity {
         displayResultB(commentryB);
         if(runTeamB>runTeamA){
             resultChoice=2;
-            String teamBWin= "TeamB Won The Game for "+wktDiff+ " Wickets!";
+            String teamBWin= "TeamB Won The Game By "+wktDiff+ " Wickets!";
             //String result="Team B Won The Game.";
             displayFinalResult(teamBWin);
 
@@ -332,7 +338,7 @@ public class MainActivity extends AppCompatActivity {
         if(runTeamB>runTeamA){
             resultChoice=2;
             wktDiff=10-wktTeamB;
-            String teamBWin= "TeamB Won The Game for "+wktDiff+ " Wickets!";
+            String teamBWin= "TeamB Won The Game By "+wktDiff+ " Wickets!";
 
             //String result="Team B Won The Game.";
             displayFinalResult(teamBWin);
@@ -390,7 +396,7 @@ public class MainActivity extends AppCompatActivity {
                 if (runTeamB > runTeamA) {
                     resultChoice=2;
                     wktDiff=10-wktTeamB;
-                    String teamBWin= "TeamB Won The Game for "+wktDiff+ " Wickets!";
+                    String teamBWin= "TeamB Won The Game By "+wktDiff+ " Wickets!";
                     //String result = "Team B Won The Game!";
                     displayFinalResult(teamBWin);
 
@@ -436,7 +442,7 @@ public class MainActivity extends AppCompatActivity {
             if(runTeamB>runTeamA){
                 resultChoice=2;
                 wktDiff=10-wktTeamB;
-                String teamBWin= "TeamB Won The Game for "+wktDiff+ " Wickets!";
+                String teamBWin= "TeamB Won The Game By "+wktDiff+ " Wickets!";
                 //String result="Team B Won The Game";
                 displayFinalResult(teamBWin);
 
